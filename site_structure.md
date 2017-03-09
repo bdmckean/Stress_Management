@@ -10,10 +10,14 @@ Stress_Management
 │   
 |└───src
 |   │   mkdoc.py          ; makes word doc for reviewing sessions
-|   │   file022.txt
+|   │   make_report.sh    : shell script for cloud server to send reports
+|   |   BioTrak-Classify-Trial.py : session classifier
+|   |   mail2.py          : mail reports from classification program
 │   
 └───notebooks             : contains jupyter notebooks
-    │   file021.txt
-    │
+    │  Brian_McKean_Stress_Management.pdf   : pdf of notebook
+    │  Brian_McKean_Stress_Management.ipynb ; project notebook
     └- Main-project-notebook
+      | Brian_McKean_Stress_Management.md   ; markdown versions
+      | *.png                               : markdown images
 ```
