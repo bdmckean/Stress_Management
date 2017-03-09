@@ -120,3 +120,14 @@ Since the cycles per second feature was so interesting I'll include the chart he
 
 
 ### Model for Deployment
+The model has been deployed to the Biotrak Health Cloud Platform on Amazon Web Services.
+Figure 6 shows the deployed data science stack. The random forest model was pickled. There is a python script that gets gets the trial user sessions data from the database using PyMongo. The script processes to develop the features for each session as required by the model. The processing uses Pandas and Numpy. The model is the scikit-learn Random Forest Classifier.
+
+The script develops three reports that are then emailed using the postfix program to the engineering distrobution lust at biotak.
+
+
+![Alt text](./images/Deployment.png "Figure 6 Deployment Model")
+
+
+### Current Work
+The next deliverable for Biotrak is a web interface that will show the sessions summary and the session classifications. In addition the web app will display graphs of sessions so that the engineers can examine the overall progress of user trials and also look at individual sessions to see what the
